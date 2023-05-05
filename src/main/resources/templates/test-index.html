@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Thymeleaf Example</title>
+</head>
+<body>
+<h1>Hello</h1>
+<h1 th:text="${message}"></h1>
+<h1 th:text="${clubs}"></h1>
+<div th:each="club :${clubs}">
+    <img th:src="${club.photoUrl}" src=""/>
+    <h2><a th:text="${club.title}"></a></h2>
+    <h1>hello</h1>
+</div>
+</body>
+</html>
